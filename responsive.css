@@ -1,0 +1,797 @@
+body{background-color: #b3b3b3;
+font-family: sans-serif;}
+
+.nav-link{position: relative;}
+.nav-item span:before{
+    content:"";
+    position :absolute;
+}
+
+#myInput{border-radius: 6px;
+    padding:6px 0px;
+}
+.nav-link:hover>span{opacity: 1;}
+.mypic{border-radius: 15px;}
+
+.btn2{background-color: rebeccapurple;
+    color:white;
+    border: purple;
+    font-family: Serif;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;}
+.btn1{background:none;
+    border-color: white;
+    border-width: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color:white;}
+ul{
+    list-style-type:none;
+}
+
+#container1{padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color:black;
+width:300px;
+    box-shadow: #2c364c;}
+
+
+/* zoom image in navbar */
+.column {
+
+    padding: -100px;
+}
+
+.column::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+
+
+/* Zoom In #1 */
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+
+
+/* carousel background image */
+
+
+@import url(https://fonts.googleapis.com/css?family=Anaheim);
+
+.containerx {
+    margin: 4% auto;
+    width: 100px;
+    height: 240px;
+    position: relative;
+    perspective: 2000px;
+
+}
+#carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 35s infinite linear;
+
+}
+#carousel:hover{
+    animation-play-state: paused;
+}
+#carousel figure{
+    display: block;
+    position: absolute;
+    width: 180px;
+    height:120px;
+padding-right:50px;
+    top: 100px;
+    overflow: hidden;
+    border: solid 2px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(300px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(300px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+imgx{
+    -webkit-filter: grayscale(1);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+imgx:hover{
+    -webkit-filter: grayscale(0);
+    transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+
+/*END OF THIS SECTION */
+/* MONA JADIDIAN */
+
+@media screen and (min-width: 801px) {
+    div.txt {
+        font-size: 40px;
+        white-space: nowrap;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.txt {
+        font-size: 30px;
+       margin-left:20px;
+        white-space: nowrap;
+    }
+}
+
+
+/* ABOUT ME */
+#containerabout{text-align: center;}
+
+.aboutme {
+             text-shadow: 2px 2px 5px hotpink;
+         }
+
+/* responsive text why team work */
+@media screen and (min-width: 601px) {
+    p.whyteam {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p.whyteam{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 667px) {
+    .home_heading {
+        font-size: 13px;padding-left:22px;
+    }
+}
+
+
+
+/* animation text*/
+#slideshow {
+    position: relative;
+    height: 40px;
+    text-align: center;
+    margin-right:14rem;
+}
+#slideshow > div {
+    position: absolute;
+}
+@keyframes width-underline {
+    0% {
+        width: 0;
+    }
+    3% {
+        width: 0;
+    }
+    15% {
+        width: 70%;
+    }
+    30% {
+        width: 100%;
+    }
+    38% {
+        width: 100%;
+    }
+    39% {
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.animTxt__content {
+    display: block;
+}
+.animTxt .txt:before {
+    position: absolute;
+    animation: width-underline 9s linear 0s infinite;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    content: "";
+}
+.txt {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+    color: black;
+
+    font-size: 40px;
+}
+
+
+
+.txt:before {
+    background: #6b00b3;
+}
+/* bellow paragragh */
+
+/* END */
+
+
+
+/* 4 boxes langouge */
+
+
+
+.h1{margin:10px 10px;
+
+font-size: 90px;}
+
+
+/* END */
+#text1{ text-shadow: 2px 2px 5px mediumvioletred;
+    font-family: Merhique;}
+
+
+
+.btn3 {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    border-radius: 20px;
+    width: 20%;
+    border:1px solid black;
+    background-color:#004d99;
+    color:black;
+}
+
+.btn3:hover,
+.btn3:focus,
+.btn3:active {
+    transform: scale(1.2);
+}
+
+@media (max-width: 667px){
+    .btn3{width:32%;}
+
+}
+
+#img1{
+    -ms-transform: skewY(4deg); /* IE 9 */
+    transform: skewY(4deg);
+    box-shadow:20px 20px 50px #f2f2f2;
+}
+@media (max-width:900px){
+    #img1 {
+        width: 100%; // new width for screen <768px
+    height: auto; // new height for screen <768px
+    }
+}
+     #img2{ -ms-transform: skewY(-4deg); /* IE 9 */
+         transform: skewY(4deg);
+         box-shadow:30px 30px 50px #f2f2f2;
+     }
+     /* title of why team work */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b3b3b3;
+    font-size:30px;
+    font-weight:bold;
+    width:20wh;
+    height: 4.2vh;
+    overflow: hidden;
+    color:#1a1aff;
+    opacity: 1;
+    font-family: Calibri;
+
+}
+
+.mask {
+    height:50px;
+    overflow:hidden;
+
+}
+
+.mask > div > div {
+
+    height:45px;
+
+    display:inline-block;
+}
+
+.first div:first-child {
+    margin-top:10px;
+    animation: show 5s infinite linear;
+}
+
+
+@keyframes show {
+    0% {margin-top:10px;}
+    20%, 80% {margin-top:0px;}
+    85% {margin-top:20px;}
+}
+@media (max-width:667px){
+    .mask {
+        white-space: nowrap;
+       font-size: 22px;
+        margin-top:25px;
+    }
+}
+@media (max-width:667px){
+    .loading {
+        white-space: nowrap;
+        font-size: 25px;
+        margin-top:45px;
+    }
+}
+
+
+/* END OF SECTION*/
+
+
+
+
+
+.btn4{border-color: #0c3a62;}
+
+div.fixbackground {
+
+    position:relative;
+}
+
+
+div.fixbackground:before {
+    content:'';
+    position:absolute;
+    background-image:url("degree.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: auto;
+    filter:brightness(80%);
+    -webkit-filter:brightness(80%);
+    left:0;top:0;bottom:0;right:0;
+    z-index:-1;
+}
+
+
+
+/*END OF SECTION */
+
+/* text on URL image */
+.ol li{padding-top: 10px;
+color:white;}
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+.neon {
+    color: #78c0ed;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    animation: shining 1s alternate infinite;
+    padding-left: 1cm;
+    padding-top: 20px;
+    font-family: Book Antiqua;
+}
+
+@keyframes shining {
+    from {
+        text-shadow: 0 0 6px rgba(82, 21, 20, 0.9),
+        0 0 10px rgba(82, 21, 20, 0.3), 0 0 12px rgba(15, 115, 223, 0.2),
+        0 0 11px rgba(15, 11, 22, 0.9), 0 0 34px rgba(15, 115, 223, 0.3),
+        0 0 14px rgba(15, 11, 22, 0.9);
+    }
+    to {
+        text-shadow: 0 0 6px rgba(82, 21, 20, 1),
+        0 0 10px rgba(82, 21, 20, 0.4), 0 0 12px rgba(15, 115, 223, 0.2),
+        0 0 12px rgba(15, 115, 223, 0.8), 0 0 18px rgba(15, 115, 223, 0.3),
+        0 0 30px rgba(15, 115, 223, 1);
+    }
+}
+.ol li {padding-left:5px;
+margin-left:22px;
+}
+
+/* click here */
+.container {
+    max-width: 1200px;
+
+    padding: 0 5rem ;
+    text-align: left;
+    position:relative;
+    margin-top: -23px;
+    font-size: 14px;
+}
+.btn-shine
+{
+    color:#66d9ff;
+    transition:all 0.5s;
+    padding-left:20px;
+}
+.btn-shine:hover {
+    text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px #FFF, 0 0 80px #FFF;
+    color: #FFF;
+}
+btn-shine span:nth-child(10):hover {
+    animation: none;
+}
+
+.btn-shine span:nth-child(10) {
+    animation: shine 5s linear infinite;
+    transition: all .5s;
+}
+
+@media (max-width:1024px){
+    .btn-shine {
+        margin-left: 3cm;
+    white-space:nowrap;
+        font-size: 13px;
+        margin-bottom:14px;
+
+    }
+}
+@media (max-width:667px){
+    .btn-shine {
+        margin-left: 1.5cm;
+        white-space:nowrap;
+        font-size: 11px;
+        padding:0px;
+
+margin-top:10px;
+
+    }
+}
+
+@media (max-width:635px){
+    .ol li {
+        padding-left:-10px;
+        margin-left:-20px;
+    white-space:nowrap;
+        font-size: 10.5px;
+
+    }
+}
+@media (max-width:635px){
+    .neon {
+
+
+        font-size: 25px;
+
+    }
+}
+
+
+@keyframes shine {
+    0%,
+    20%,
+    50%,
+    80% {
+        color: #333;
+        text-shadow: none;
+    }
+    30%,
+    70%,
+    95% {
+        color: #FFF;
+        text-shadow: 0 0 10px #FFF, 0 0 20px #FFF, 0 0 40px #FFF, 0 0 80px #FFF;
+    }
+}
+/*END OF SECTION */
+
+/* programming langouges*/
+
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+
+
+
+.loader {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%)
+}
+
+.loader h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: rgba(255, 255, 255, .1);
+    background-image: url("http://saraharvey.xyz/wp-content/uploads/2019/10/taller-beer.png");
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: fill-up 15s linear infinite;
+}
+
+@keyframes fill-up {
+    0% {background-position: left 0px top 80px;}
+    40% {background-position: left 800px top -50px;}
+    80% {background-position: left 1800px top -50px;}
+    100% {background-position: left 2400px top -50px;}
+}
+
+
+
+
+.langouge li{border:1px solid #808080;
+width: 32%;
+background-color: black;
+color:white;
+font-family:  monospace;
+padding:5px 0px;
+font-size: 20px;
+    margin-left:8cm;
+}
+
+.checked {
+    color: orange;
+}
+
+
+@media (max-width:1200px)and (min-width: 700px){
+    .langouge li{
+        margin-left: 5cm; // new width for screen <768px
+width:52%;
+        font-size: 15px;
+        padding:5px 0px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .langouge li{
+
+
+        font-size: 10px;
+
+    }
+}
+@media(max-width:1024px){
+    .langouge {margin-left:-9cm;
+    white-space: nowrap;
+        font-size: 8px;
+    }
+}
+
+@media (max-width:1020px){
+    .loader h1{ white-space: nowrap;
+}
+}
+@media (max-width:900px){
+    .loader h1{ white-space: nowrap;
+        font-size:30px;
+        text-align: center;
+    }
+}
+
+/* END OF SECTION*/
+/* footer*/
+
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+
+/* facebook button class*/
+.gmailBtn{
+    background: #ff3333;
+}
+
+.gmailBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f0e0"; /* add facebook icon */
+}
+
+.gmailBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* instagram button class*/
+.instagramBtn{
+    background: #e60073;
+}
+
+.instagramBtn:before{
+    font-family: "FontAwesome";
+    content: "\f16d"; /* add instagram icon */
+}
+
+.instagramBtn:hover{
+    color: #cb2027;
+    background: #e60073;
+}
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+    font-family: "FontAwesome";
+    content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+    color: #00ABE3;
+    background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+    font-family: "FontAwesome";
+    content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+    color: #0094BC;
+    background: #fff;
+}
+
+
+/* telephonbutton class*/
+.telephonBtn{
+    background:#47d147;
+}
+
+.telephonBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f098"; /* add facebook icon */
+}
+
+.telephonBtn:hover + tel{display: block;
+
+}
+.tel{background-color: white;
+color:black;
+display: none;}
+
+
+
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+    font-family: "FontAwesome";
+    content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+    color: #e88845;
+    background: #fff;
+}
+
+/* medium button class*/
+.mediumBtn{
+    background: #00ABE3;
+}
+
+.mediumBtn:before{
+    font-family: "FontAwesome";
+    content: "\f23a"; /* add medium icon */
+}
+
+.mediumBtn:hover{
+    color: #00ABE3;
+    background: #fff;
+}
+
+/* dribbble button class*/
+.dribbbleBtn{
+    background: #ea4c89;
+}
+
+.dribbbleBtn:before{
+    font-family: "FontAwesome";
+    content: "\f17d"; /* add dribbble icon */
+}
+
+.dribbbleBtn:hover{
+    color: #00ABE3;
+    background: #fff;
+}
+
+/* medium button class*/
+.deliciousBtn{
+    background: #0076e8;
+}
+
+.deliciousBtn:before{
+    font-family: "FontAwesome";
+    content: "\f1a5"; /* add delicious icon */
+}
+
+.deliciousBtn:hover{
+    color: #00ABE3;
+    background: #fff;
+}
+
+.footer2{background-color: #333333;
+height: 4cm;}
+
+.social1 a{padding:30px;}
+/* medium button class*/
+
+/*END OF THIS SECTION*/
+
+
+
+
+
